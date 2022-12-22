@@ -12,7 +12,7 @@ const LayoutComponent: React.FC<IDefautContext> = ({ children }) => {
   const { openMenu } = useMenu();
 
   const gridTemplateColumns = useMemo(() => {
-    return openMenu ? '250px auto' : '75px auto';
+    return openMenu ? '270px auto' : '75px auto';
   }, [openMenu]);
 
   return (

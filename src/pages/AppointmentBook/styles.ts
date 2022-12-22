@@ -51,11 +51,14 @@ export const Container = styled.div`
   }
 
   .appointment-patient {
-    min-width: 935px;
+    min-width: 795px;
+    max-width: 935px;
+    width: 80%;
   }
 
   .appointment-action {
     font-size: 16px;
+    width: 110px;
     
     button {
       margin-right: 5px;
