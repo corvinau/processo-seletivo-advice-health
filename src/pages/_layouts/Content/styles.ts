@@ -6,7 +6,7 @@ export const Container = styled.div`
 
   background-color: #e5e5e5 !important;
 
-  padding: 20px;
+  padding: 20px 40px;
 
   /* define que terá scrollbar apenas para a área do content */
   overflow-y: auto;
