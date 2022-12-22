@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import ConfigProvider from 'antd/es/config-provider';
+import ptBR from 'antd/lib/locale/pt_BR';
+
+import AppProvider from './hooks/index';
+
+import LayoutComponent from './pages/_layouts';
+
+import Dashboard from './pages/Dashboard';
+
+import GlobalStyles from './styles/global';
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ConfigProvider locale={ptBR}>
+        <AppProvider>
+          <Router>
+            <LayoutComponent>
+              <Routes>
+                <Route path='/' element={<Dashboard />} />
+                <Route path='/dashboard' element={<Dashboard />} />
+              </Routes>
+            </LayoutComponent>
+          </Router>
+        </AppProvider>
+      </ConfigProvider>
+      <GlobalStyles />
+    </>
   );
-}
+};
 
 export default App;
