@@ -8,6 +8,8 @@ No projeto, foi utilizado o framework ReactJS com TypeScript, ant design para a 
 
 Como foquei mais na criação da interface e em como ela ficaria visualmente, interações de inserção de dados não funcionam, todos os dados que foram apresentados aqui são estáticos e voltados para como ficaria a visualização de todos os elementos juntos.
 
+Outro ponto necessário de deixar esclarecido aqui, é que foquei no desenvolvimento para desktop dessa aplicação, então é muito provável que tudo quebre em dispositivos menores.
+
 ## Rodando o projeto localmente
 
 Clone o projeto na sua máquina.
@@ -34,4 +36,4 @@ Depois disso basta testar.
 
 ## Acessando o projeto em um servidor
 
-Para visualizar o projeto rodando em um servidor da [`Vercel`](https://vercel.com/), acesse: [.vercel.app](https://.vercel.app/)
+Para visualizar o projeto rodando em um servidor da [`Vercel`](https://vercel.com/), acesse: [teste-advice-health.vercel.app](https://teste-advice-health.vercel.app/)
