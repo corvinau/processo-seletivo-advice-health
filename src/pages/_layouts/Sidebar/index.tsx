@@ -58,29 +58,29 @@ const Sidebar: React.FC = () => {
             </Tooltip>
           </Menu.Item>
 
-          <Menu.Item key='/historico'>
+          <Menu.Item key='/agendamento-de-consultas'>
             <Tooltip
-              title={openMenu ? '' : 'Rotina de agendamentos'}
+              title={openMenu ? '' : 'Agendamento de consultas'}
               placement='right'
               color='#1677ff'>
-              <Link to='/historico'>
+              <Link to='/agendamento-de-consultas'>
                 <ScheduleOutlined className='sibebar-icon' />
                 <span className={openMenu ? 'link-name' : 'link-name-close'}>
-                  Rotina de agendamentos
+                  Agendamento de consultas
                 </span>
               </Link>
             </Tooltip>
           </Menu.Item>
 
-          <Menu.Item key='/mais-prazo'>
+          <Menu.Item key='/consulta-de-agendamentos'>
             <Tooltip
-              title={openMenu ? '' : 'Rotina de consultas'}
+              title={openMenu ? '' : 'Consulta de agendamentos'}
               placement='right'
               color='#1677ff'>
-              <Link to='/mais-prazo'>
+              <Link to='/consulta-de-agendamentos'>
                 <ContactsOutlined className='sibebar-icon' />
                 <span className={openMenu ? 'link-name' : 'link-name-close'}>
-                  Rotina de consultas
+                  Consulta de agendamentos
                 </span>
               </Link>
             </Tooltip>

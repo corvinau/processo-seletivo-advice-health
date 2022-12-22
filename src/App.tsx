@@ -10,6 +10,7 @@ import AppProvider from './hooks/index';
 import LayoutComponent from './pages/_layouts';
 
 import Dashboard from './pages/Dashboard';
+import Schedules from './pages/Schedules';
 
 import GlobalStyles from './styles/global';
 
@@ -23,6 +24,14 @@ const App: React.FC = () => {
               <Routes>
                 <Route path='/' element={<Dashboard />} />
                 <Route path='/dashboard' element={<Dashboard />} />
+                {/* <Route
+                  path='/agendamento-de-consultas'
+                  element={<Schedules />}
+                /> */}
+                <Route
+                  path='/consulta-de-agendamentos'
+                  element={<Schedules />}
+                />
               </Routes>
             </LayoutComponent>
           </Router>
